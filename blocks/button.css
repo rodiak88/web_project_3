@@ -16,7 +16,7 @@
   background: #0063d2;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 470px) {
   .button {
     min-width: 100%;
     text-align: center;
