@@ -1,0 +1,88 @@
+.cover {
+  max-width: 92.5%;
+  min-height: 740px;
+  margin: 7.18749% auto 0;
+  position: relative;
+  background-image: url(../images/cover_image.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #2a2c2f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  transition: opacity 200ms ease-in-out;
+}
+
+.cover:hover::before {
+  opacity: 0.8;
+}
+
+.cover__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  z-index: 1;
+}
+
+.cover__title {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.06;
+  margin: 0;
+  padding: 0;
+}
+
+.cover__subtitle {
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.cover__subtitle-span {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .cover {
+    max-width: 100%;
+    min-height: 746px;
+    margin-top: 11.97916%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cover {
+    margin-top: 15.625%;
+    min-height: 254px;
+  }
+
+  .cover__container {
+    gap: 16px;
+  }
+
+  .cover__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+
+  .cover__subtitle {
+    font-size: 16px;
+    line-height: 1.14;
+  }
+}

@@ -1,0 +1,135 @@
+.card {
+  display: grid;
+  grid-template-columns: 46.7479674796748% 1fr;
+  grid-template-rows: auto auto 1fr;
+  gap: 48px 40px;
+  margin-top: 8.105369807497468%;
+  grid-template-areas:
+    "title artist"
+    "image text"
+    "button text";
+}
+
+.card:first-of-type {
+  margin-top: 0;
+}
+
+.card__title {
+  grid-area: title;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1.06;
+  margin: 0;
+  padding: 0;
+}
+
+.card__artist {
+  grid-area: artist;
+  margin-top: auto;
+}
+
+.card__atrist-title {
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin: 0;
+  padding: 0;
+}
+
+.card__artist-content {
+  font-size: 18px;
+  line-height: 1.22;
+  margin: 0;
+  padding: 8px 0 0;
+}
+
+.card__artist-span {
+  display: block;
+}
+
+.card__image {
+  grid-area: image;
+  max-width: 100%;
+}
+
+.card__text {
+  grid-area: text;
+  font-size: 18px;
+  line-height: 1.63;
+  margin: 0;
+  padding: 0;
+}
+
+.card__text-span {
+  display: block;
+  padding-top: 25px;
+}
+
+.card__nft {
+  grid-area: button;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    gap: 48px 28px;
+    margin-top: 10%;
+  }
+
+  .card__title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  .card__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 30px;
+    margin-top: 15.625%;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "text"
+      "button";
+  }
+
+  .card__title {
+    max-width: 90%;
+    margin: 0 5%;
+    font-size: 32px;
+    line-height: 1.09;
+  }
+
+  .card__artist {
+    max-width: 90%;
+    margin: 0 5%;
+  }
+
+  .card__atrist-title {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .card__artist-content {
+    font-size: 18px;
+  }
+
+  .card__text {
+    font-size: 16px;
+    max-width: 90%;
+    margin: 0 5%;
+  }
+
+  .card__nft {
+    max-width: 90%;
+    margin: 0 5%;
+  }
+}
