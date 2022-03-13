@@ -10,7 +10,7 @@
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 570px) {
   .places {
     max-width: 100%;
     margin: 19.375% auto 0;

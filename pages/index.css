@@ -11,3 +11,7 @@
 @import url(../blocks/button.css);
 @import url(../blocks/cover.css);
 @import url(../blocks/footer.css);
+
+body {
+  background-color: #2a2c2f;
+}

@@ -54,20 +54,22 @@
   max-width: 100%;
 }
 
-.card__text {
+.card__description {
   grid-area: text;
+}
+
+.card__text {
   font-size: 18px;
   line-height: 1.63;
   margin: 0;
-  padding: 0;
+  padding-bottom: 25px;
 }
 
-.card__text-span {
-  display: block;
-  padding-top: 25px;
+.card__text:last-of-type {
+  padding-bottom: 0;
 }
 
-.card__nft {
+.card__button {
   grid-area: button;
 }
 
@@ -87,7 +89,7 @@
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 570px) {
   .card {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
@@ -122,13 +124,13 @@
     font-size: 18px;
   }
 
-  .card__text {
-    font-size: 16px;
-    max-width: 90%;
-    margin: 0 5%;
+  .card__image {
+    margin: 0 auto;
+    object-fit: fill;
   }
 
-  .card__nft {
+  .card__text {
+    font-size: 16px;
     max-width: 90%;
     margin: 0 5%;
   }

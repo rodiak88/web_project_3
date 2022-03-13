@@ -20,9 +20,9 @@
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 570px) {
   .page {
-    max-width: 450px;
+    max-width: 570px;
   }
 }
 

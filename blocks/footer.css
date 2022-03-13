@@ -11,3 +11,15 @@
   line-height: 1.14;
   text-align: right;
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 11.458333333333332%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .footer {
+    margin-top: 20%;
+  }
+}
